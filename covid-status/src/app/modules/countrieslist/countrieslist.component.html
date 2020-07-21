@@ -1,0 +1,14 @@
+<div class="div-countries-table block">
+  <table class="info-countries-table">
+    <tbody>
+      <tr *ngFor="let country of countriesArray">
+        <td class="d-table-cell">
+          <a (click)="selectCountry(country.Country)" class="link" href="#">{{country.Country}}</a>
+        </td>
+        <td class="table-img">
+          <img src="https://img.shields.io/badge/-{{country.TotalConfirmed | number}}-red" alt="" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

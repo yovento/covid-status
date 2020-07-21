@@ -1,0 +1,52 @@
+<div class="main animate__animated animate__fadeIn">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 content-wrapper">
+        <div class="logo-sico">
+          <img src="" alt="" />
+        </div>
+
+        <!-- .................... -->
+        <!-- FIELDSET FORM PASO 1 -->
+        <!-- .................... -->
+        <div class="col-md-12 setup-content">
+          <app-countrydetails selectedCountry="selectedCountry"></app-countrydetails>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="col-12 col-md-4 sidebar-wrapper">
+
+        <hr />
+
+        <div class="info-proyecto">
+          <span class="info-btn">
+            <p class="showinfo_link" data-toggle="collapse" href="#info-countries-block" aria-expanded="false"
+              aria-controls="info-proyecto-block">
+              Countries list
+            </p>
+          </span>
+          <div id="info-countries-block">
+            <app-countrieslist (selectedCountryChanged)="selectedCountryChanged($event)"></app-countrieslist>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal js-loading-bar">
+  <div class="modal-dialog">
+    <div class="modal-content-loading">
+      <div class="modal-body">
+        <div class="container text-center vh-40 d-table">
+          <div class="m-auto d-table-cell align-middle">
+            <div class="spinner-border text-light" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

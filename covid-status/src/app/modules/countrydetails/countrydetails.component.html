@@ -1,0 +1,131 @@
+<fieldset>
+  <legend id="title-2">
+    <span class="step-heading">Covid status - Last Updated {{ queryTime | date : 'short' }} </span>
+  </legend>
+
+  <div class="wrapper-step">
+    <div class="form-group">
+
+      <div id="propuestacuotainicial-block" class="row">
+
+
+        <div class="col-12">
+          <span class="step-description-inner">Status for {{selectedCountry.countryName}}:</span>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.confirmedNewCases | number}}</span>
+            <span class="block-cuota-text">New Cases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.confirmedNewDeaths | number}}</span>
+            <span class="block-cuota-text">New Deceases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_separación"
+              class="currency block-cuota-value">{{selectedCountry.confirmedNewRecovers | number}}</span>
+            <span class="block-cuota-text">New Recovers</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.confirmedCases | number}}</span>
+            <span class="block-cuota-text">Total Cases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.confirmedDeaths | number}}</span>
+            <span class="block-cuota-text">Total Deceases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_separación"
+              class="currency block-cuota-value">{{selectedCountry.confirmedRecovers | number}}</span>
+            <span class="block-cuota-text">Total Recovers</span>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <hr />
+        </div>
+      </div>
+
+      <div id="propuestacuotainicial-block" class="row">
+
+        <div class="col-12">
+          <span class="step-description-inner">Global Status:</span>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_cuotainicial"
+              class="currency block-cuota-value">{{selectedCountry.globalNewCases | number }}</span>
+            <span class="block-cuota-text">New Cases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.globalNewDeath | number}}</span>
+            <span class="block-cuota-text">New Deceases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_separación"
+              class="currency block-cuota-value">{{selectedCountry.globalNewRecover | number}}</span>
+            <span class="block-cuota-text">New Recovers</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_cuotainicial"
+              class="currency block-cuota-value">{{selectedCountry.globalCases | number }}</span>
+            <span class="block-cuota-text">Total Cases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_valor"
+              class="currency block-cuota-value">{{selectedCountry.globalDeath | number}}</span>
+            <span class="block-cuota-text">Total Deceases</span>
+          </div>
+        </div>
+
+        <div class="block-cuota-wrapper">
+          <div class="block-cuota block-cuota_propuesta validate">
+            <span id="propuesta_separación"
+              class="currency block-cuota-value">{{selectedCountry.globalRecover | number}}</span>
+            <span class="block-cuota-text">Total Recovers</span>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <hr />
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</fieldset>
