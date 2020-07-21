@@ -3,7 +3,7 @@
     <span class="step-heading">Covid status - Last Updated {{ queryTime | date : 'short' }} </span>
   </legend>
 
-  <div class="wrapper-step">
+  <div class="wrapper-step" *ngIf="selectedCountry != undefined">
     <div class="form-group">
 
       <div id="propuestacuotainicial-block" class="row">
